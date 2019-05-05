@@ -3,14 +3,12 @@ body {
   font-size: 18px;
   line-height: 34px;
   color: #777777;
-  background: url("../images/concrete_seamless.png");
+  background: url("../images/background_1.jpg");
 }
 
 * {
   box-sizing: border-box;
 }
-
-/* general */
 
 .container {
   width: 100%;
@@ -168,7 +166,7 @@ h3, h2 {
   border-bottom: 0;
 }
 
-.auth-image {
+.img {
   float: left;
   width: 200px;
   height: auto;
