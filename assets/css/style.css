@@ -76,6 +76,7 @@ h3 {
 }
 
 nav {
+  /* can't get this to fully display on screen. contact is cut off for some reason */
   float: right;
   margin-top: 25px;
 }
@@ -214,26 +215,44 @@ input[type=submit] {
   border: 0 none;
 }
 
-@media (max-width: 980px){
+@media (min-width: 769px){
+  /* ^^^ something was wrong with the max-witdth tag that made it not apply the settings below over 768px.
+   this seemed to fix it.  */
+  #main-container{
+    margin-left: 20px;
+    margin-right: 50%;
+    margin-bottom: 60%;
 
+  /* trouble getting the logo to stay aligned with #main container at certain widths above 768px */
+  }
 }
 
 @media (max-width: 768px){
-
+  #main-container{
+    margin-right: 25px;
+  }
 }
 
 @media (max-width: 640px){
   #masthead{
     position: static;
   }
+  .img{
+    width: 100%;
+  }
   #logo {
     width: 100%;
-
   }
   nav{
     float: left;
     /* could not align center */
     box-align: center;
+  }
+  #main-container{
+    padding-top: 5%;
+  }
+  .work{
+    width: 100%
   }
 
 }
